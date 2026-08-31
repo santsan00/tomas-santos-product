@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tomas Santos - Portfolio Website">
+  <meta name="author" content="Tomas Santos">
+  <title>Tomas Santos | Portfolio</title>
+  
+  <!-- Design Tokens -->
+  <link rel="stylesheet" href="styles/design-tokens.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Google Fonts (will be populated from Figma) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Tomas Santos</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm Tomas Santos</h1>
+        <p class="hero-subtitle text-body-large">I create beautiful, functional digital experiences</p>
+        <div class="hero-buttons">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Profile image will be loaded from Figma assets -->
+        <img src="assets/profile-image.png" alt="Tomas Santos" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="text-body">
+            I'm a passionate digital designer and developer with expertise in creating 
+            modern, user-friendly websites and applications. I specialize in turning 
+            complex problems into simple, elegant solutions.
+          </p>
+          <p class="text-body">
+            With years of experience in web development, I've worked with clients from 
+            various industries to create custom digital solutions that drive results.
+          </p>
+        </div>
+        <div class="about-skills">
+          <div class="skill-item">
+            <span class="skill-name">Web Design</span>
+            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Frontend Development</span>
+            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">UI/UX Design</span>
+            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Figma</span>
+            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="work">
+    <div class="container">
+      <h2 class="section-title">My Work</h2>
+      <div class="work-grid">
+        <!-- Projects will be populated from Figma -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-1.png" alt="Project 1" onerror="this.src='https://via.placeholder.com/400x300?text=Project+1'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project Title</h3>
+            <p class="project-description text-body-small">Brief description of the project and your role.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-2.png" alt="Project 2" onerror="this.src='https://via.placeholder.com/400x300?text=Project+2'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project Title</h3>
+            <p class="project-description text-body-small">Brief description of the project and your role.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/project-3.png" alt="Project 3" onerror="this.src='https://via.placeholder.com/400x300?text=Project+3'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project Title</h3>
+            <p class="project-description text-body-small">Brief description of the project and your role.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">What I Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-description text-body-small">
+            Creating intuitive and beautiful user interfaces that delight users.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-description text-body-small">
+            Building responsive, fast, and accessible websites.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">Mobile Design</h3>
+          <p class="service-description text-body-small">
+            Designing mobile-first experiences for iOS and Android.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <h3 class="service-title">Brand Identity</h3>
+          <p class="service-description text-body-small">
+            Creating cohesive brand experiences across all touchpoints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p class="text-body">Email: <a href="mailto:hello@tomas.com">hello@tomas.com</a></p>
+          <p class="text-body">Phone: +1 (123) 456-7890</p>
+          <div class="social-links">
+            <h4>Connect With Me</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon">LinkedIn</a>
+              <a href="#" class="social-icon">GitHub</a>
+              <a href="#" class="social-icon">Dribbble</a>
+              <a href="#" class="social-icon">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-body-small">© 2024 Tomas Santos. All rights reserved.</p>
+      <p class="text-body-small">
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "tomas-santos-product",
+  "version": "1.0.0",
+  "description": "Tomas Santos - Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/sync-figma.js",
+    "sync:design-tokens": "node scripts/extract-design-tokens.js",
+    "sync:assets": "node scripts/extract-assets.js",
+    "sync:all": "npm run sync:design-tokens && npm run sync:assets",
+    "start": "npx serve public",
+    "build": "npm run sync:all"
+  },
+  "keywords": [
+    "portfolio",
+    "figma",
+    "design-tokens"
+  ],
+  "author": "Tomas Santos",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
