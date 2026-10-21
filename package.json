@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "node scripts/sync-figma.js",
-    "sync:design-tokens": "node scripts/extract-design-tokens.js",
-    "sync:assets": "node scripts/extract-assets.js",
-    "sync:all": "npm run sync:design-tokens && npm run sync:assets",
+    "sync:design-tokens": "node scripts/sync-figma.js tokens",
+    "sync:assets": "node scripts/sync-figma.js assets",
+    "sync:components": "node scripts/sync-figma.js components",
+    "sync:all": "node scripts/sync-figma.js",
     "start": "npx serve public",
     "build": "npm run sync:all"
   },

@@ -108,6 +108,7 @@ The file ID is: `6ByJL76V2sXnwg2K1beBBD`
 | `npm run dev` | Run the main sync script |
 | `npm run sync:design-tokens` | Extract colors, typography, and spacing |
 | `npm run sync:assets` | Download images and SVGs |
+| `npm run sync:components` | Generate HTML stubs for Figma components |
 | `npm run sync:all` | Run all sync operations |
 | `npm start` | Start the development server |
 
